@@ -8,6 +8,11 @@
   </languages>
   <imports />
   <registry>
+    <language id="542b09d5-9fea-43d0-b4e4-812d7527e00f" name="de.kontext_e.plantuml_in_asciidoc">
+      <concept id="3181446686395639948" name="de.kontext_e.plantuml_in_asciidoc.structure.DiagramContentReference" flags="ng" index="2ikALF">
+        <reference id="3181446686395658524" name="diagram" index="2ikznV" />
+      </concept>
+    </language>
     <language id="7ebbcfc1-4f12-49c8-8abb-0188a2b7bf3f" name="de.kontext_e.plantuml">
       <concept id="3181446686395304077" name="de.kontext_e.plantuml.structure.IDiagram" flags="ng" index="2iikLE">
         <child id="3181446686395456412" name="contents" index="2ilLXV" />
@@ -30,7 +35,9 @@
       <concept id="3181446686392143394" name="de.kontext_e.asciidoc.structure.AsciidocDocument" flags="ng" index="2i6oF5">
         <child id="3181446686392373838" name="contents" index="2ip1qD" />
       </concept>
-      <concept id="3181446686394641358" name="de.kontext_e.asciidoc.structure.ListingBlock" flags="ng" index="2igUWD" />
+      <concept id="3181446686394641358" name="de.kontext_e.asciidoc.structure.ListingBlock" flags="ng" index="2igUWD">
+        <child id="3181446686394642040" name="contents" index="2igUEv" />
+      </concept>
       <concept id="3181446686392643963" name="de.kontext_e.asciidoc.structure.AttributeValue" flags="ng" index="2io3ms">
         <property id="3181446686392644044" name="value" index="2io3kF" />
       </concept>
@@ -63,8 +70,8 @@
     <node concept="2ilLXb" id="2KALeuYtabD" role="2ilLXV">
       <node concept="2iiOQz" id="2KALeuYtace" role="2iiOQn">
         <property role="2iiOZK" value="--&gt;" />
-        <ref role="2iiOQK" node="2KALeuYtac8" resolve="de.kontext_e.project.services" />
         <ref role="2iiOQY" node="2KALeuYtabZ" resolve="de.kontext_e.project.domain" />
+        <ref role="2iiOQK" node="2KALeuYtac8" resolve="de.kontext_e.project.services" />
       </node>
       <node concept="2ijVxn" id="2KALeuYtabZ" role="2ijVyu">
         <property role="2ijVBr" value="#ffffff" />
@@ -110,7 +117,11 @@
         <property role="2io3kF" value="&quot;png&quot;" />
       </node>
     </node>
-    <node concept="2igUWD" id="2KALeuYtark" role="2ip1qD" />
+    <node concept="2igUWD" id="2KALeuYtark" role="2ip1qD">
+      <node concept="2ikALF" id="2KALeuYth1z" role="2igUEv">
+        <ref role="2ikznV" node="2KALeuYtabC" resolve="Package Diagram" />
+      </node>
+    </node>
     <node concept="2iph4c" id="2KALeuYtanX" role="2ip1qD" />
     <node concept="2iowq1" id="2KALeuYtacz" role="2ip1qD">
       <property role="2iowpZ" value="Comments regarding structure and interdependencies at Level 1:" />

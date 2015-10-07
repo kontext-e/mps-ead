@@ -23,6 +23,8 @@
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
+        <language id="6e501150-5762-4277-b4a7-b0d3e9e5fcf3" fqName="de.kontext_e.asciidoc" version="0" />
+        <language id="7ebbcfc1-4f12-49c8-8abb-0188a2b7bf3f" fqName="de.kontext_e.plantuml" version="0" />
         <language id="542b09d5-9fea-43d0-b4e4-812d7527e00f" fqName="de.kontext_e.plantuml_in_asciidoc" version="-1" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
@@ -42,10 +44,19 @@
     </generator>
   </generators>
   <sourcePath />
+  <usedLanguages>
+    <usedLanguage>6e501150-5762-4277-b4a7-b0d3e9e5fcf3(de.kontext_e.asciidoc)</usedLanguage>
+    <usedLanguage>7ebbcfc1-4f12-49c8-8abb-0188a2b7bf3f(de.kontext_e.plantuml)</usedLanguage>
+    <usedLanguage>542b09d5-9fea-43d0-b4e4-812d7527e00f(de.kontext_e.plantuml_in_asciidoc)</usedLanguage>
+  </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
+    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
   </usedDevKits>
   <languageVersions>
+    <language id="6e501150-5762-4277-b4a7-b0d3e9e5fcf3" fqName="de.kontext_e.asciidoc" version="0" />
+    <language id="7ebbcfc1-4f12-49c8-8abb-0188a2b7bf3f" fqName="de.kontext_e.plantuml" version="0" />
+    <language id="542b09d5-9fea-43d0-b4e4-812d7527e00f" fqName="de.kontext_e.plantuml_in_asciidoc" version="-1" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" fqName="jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -77,6 +88,9 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>6e501150-5762-4277-b4a7-b0d3e9e5fcf3(de.kontext_e.asciidoc)</extendedLanguage>
+    <extendedLanguage>7ebbcfc1-4f12-49c8-8abb-0188a2b7bf3f(de.kontext_e.plantuml)</extendedLanguage>
+  </extendedLanguages>
 </language>
 
