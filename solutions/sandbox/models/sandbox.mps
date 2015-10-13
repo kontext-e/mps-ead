@@ -35,14 +35,14 @@
       <concept id="3181446686392143394" name="de.kontext_e.asciidoc.structure.AsciidocDocument" flags="ng" index="2i6oF5">
         <child id="3181446686392373838" name="contents" index="2ip1qD" />
       </concept>
-      <concept id="3181446686394641358" name="de.kontext_e.asciidoc.structure.ListingBlock" flags="ng" index="2igUWD">
-        <child id="3181446686394642040" name="contents" index="2igUEv" />
-      </concept>
       <concept id="3181446686392643963" name="de.kontext_e.asciidoc.structure.AttributeValue" flags="ng" index="2io3ms">
         <property id="3181446686392644044" name="value" index="2io3kF" />
       </concept>
       <concept id="3181446686392643881" name="de.kontext_e.asciidoc.structure.AttributeList" flags="ng" index="2io3ne">
         <child id="3181446686392644112" name="values" index="2io3rR" />
+      </concept>
+      <concept id="3181446686392691514" name="de.kontext_e.asciidoc.structure.DelimitedBlock" flags="ng" index="2iomZt">
+        <child id="6712282166530429436" name="contents" index="1_6C3H" />
       </concept>
       <concept id="3181446686392500838" name="de.kontext_e.asciidoc.structure.SimpleTextualLine" flags="ng" index="2iowq1">
         <property id="3181446686392500888" name="line" index="2iowpZ" />
@@ -58,6 +58,7 @@
       <concept id="3181446686392859681" name="de.kontext_e.asciidoc.structure.BlockTitle" flags="ng" index="2irfz6">
         <property id="3181446686392860751" name="text" index="2ir8iC" />
       </concept>
+      <concept id="6712282166529819990" name="de.kontext_e.asciidoc.structure.LiteralBlock" flags="ng" index="1_5th7" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -108,17 +109,17 @@
     <node concept="2iph4c" id="2KALeuYtacw" role="2ip1qD" />
     <node concept="2io3ne" id="2KALeuYtaku" role="2ip1qD">
       <node concept="2io3ms" id="2KALeuYtanI" role="2io3rR">
-        <property role="2io3kF" value="&quot;plantuml&quot;" />
+        <property role="2io3kF" value="plantuml" />
       </node>
       <node concept="2io3ms" id="2KALeuYtanL" role="2io3rR">
-        <property role="2io3kF" value="&quot;MainBuildingBlocks.png&quot;" />
+        <property role="2io3kF" value="MainBuildingBlocks.png" />
       </node>
       <node concept="2io3ms" id="2KALeuYtanQ" role="2io3rR">
-        <property role="2io3kF" value="&quot;png&quot;" />
+        <property role="2io3kF" value="png" />
       </node>
     </node>
-    <node concept="2igUWD" id="2KALeuYtark" role="2ip1qD">
-      <node concept="2ikALF" id="2KALeuYth1z" role="2igUEv">
+    <node concept="1_5th7" id="5OAOh4SfJAn" role="2ip1qD">
+      <node concept="2ikALF" id="2KALeuYth1z" role="1_6C3H">
         <ref role="2ikznV" node="2KALeuYtabC" resolve="Package Diagram" />
       </node>
     </node>
