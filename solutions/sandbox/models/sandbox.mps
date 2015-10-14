@@ -35,6 +35,7 @@
       <concept id="3181446686392143394" name="de.kontext_e.asciidoc.structure.AsciidocDocument" flags="ng" index="2i6oF5">
         <child id="3181446686392373838" name="contents" index="2ip1qD" />
       </concept>
+      <concept id="3181446686394641358" name="de.kontext_e.asciidoc.structure.ListingBlock" flags="ng" index="2igUWD" />
       <concept id="3181446686392643963" name="de.kontext_e.asciidoc.structure.AttributeValue" flags="ng" index="2io3ms">
         <property id="3181446686392644044" name="value" index="2io3kF" />
       </concept>
@@ -57,6 +58,10 @@
       <concept id="3181446686392440299" name="de.kontext_e.asciidoc.structure.EmptyLine" flags="ng" index="2iph4c" />
       <concept id="3181446686392859681" name="de.kontext_e.asciidoc.structure.BlockTitle" flags="ng" index="2irfz6">
         <property id="3181446686392860751" name="text" index="2ir8iC" />
+      </concept>
+      <concept id="3181446686392921577" name="de.kontext_e.asciidoc.structure.BulletedListItem" flags="ng" index="2iru$e">
+        <property id="3181446686392921688" name="text" index="2iruEZ" />
+        <property id="3181446686392921951" name="asterisks" index="2iruIS" />
       </concept>
       <concept id="6712282166529819990" name="de.kontext_e.asciidoc.structure.LiteralBlock" flags="ng" index="1_5th7" />
     </language>
@@ -318,6 +323,225 @@
       <property role="2ioOP9" value="Level 3" />
     </node>
     <node concept="2iph4c" id="2KALeuYtadW" role="2ip1qD" />
+  </node>
+  <node concept="2i6oF5" id="5OAOh4SgUkt">
+    <property role="TrG5h" value="09_design_decisions.adoc" />
+    <node concept="2ioXgU" id="5OAOh4SgUku" role="2ip1qD">
+      <property role="2ioXnO" value="section-design-decisions" />
+    </node>
+    <node concept="2ioOQi" id="5OAOh4SgUkv" role="2ip1qD">
+      <property role="2ioOO9" value="1" />
+      <property role="2ioOP9" value="Design Decisions" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4SgUkw" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUkx" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUky" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUkz" role="2ip1qD" />
+    <node concept="2ioOQi" id="5OAOh4SgUk$" role="2ip1qD">
+      <property role="2ioOO9" value="2" />
+      <property role="2ioOP9" value="Decision Topic Template" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4SgUk_" role="2ip1qD" />
+    <node concept="2irfz6" id="5OAOh4SgUkA" role="2ip1qD">
+      <property role="2ir8iC" value="Problem" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4SgUkB" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUkC" role="2ip1qD" />
+    <node concept="2irfz6" id="5OAOh4SgUkD" role="2ip1qD">
+      <property role="2ir8iC" value="Constraints" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4SgUkE" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUkF" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUkG" role="2ip1qD" />
+    <node concept="2irfz6" id="5OAOh4SgUkH" role="2ip1qD">
+      <property role="2ir8iC" value="Assumptions" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4SgUkI" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUkJ" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUkK" role="2ip1qD" />
+    <node concept="2irfz6" id="5OAOh4SgUkL" role="2ip1qD">
+      <property role="2ir8iC" value="Considered Alternatives" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4SgUkM" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUkN" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUkO" role="2ip1qD" />
+    <node concept="2irfz6" id="5OAOh4SgUkP" role="2ip1qD">
+      <property role="2ir8iC" value="Decision" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4SgUkQ" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUkR" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4SgUkS" role="2ip1qD" />
+    <node concept="2ioOQi" id="5OAOh4SgUkT" role="2ip1qD">
+      <property role="2ioOO9" value="2" />
+      <property role="2ioOP9" value="Decision Logging Framework" />
+    </node>
+    <node concept="2irfz6" id="5OAOh4Shv2i" role="2ip1qD">
+      <property role="2ir8iC" value="Problem" />
+    </node>
+    <node concept="2iowq1" id="5OAOh4Shv6i" role="2ip1qD">
+      <property role="2iowpZ" value="For writing log messages, the whole application has to use exactly one defined logging framework." />
+    </node>
+    <node concept="2iph4c" id="5OAOh4Shv2k" role="2ip1qD" />
+    <node concept="2irfz6" id="5OAOh4Shv2l" role="2ip1qD">
+      <property role="2ir8iC" value="Constraints" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4Shv2m" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4Shv2n" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4Shv2o" role="2ip1qD" />
+    <node concept="2irfz6" id="5OAOh4Shv2p" role="2ip1qD">
+      <property role="2ir8iC" value="Assumptions" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4Shv2q" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4Shv2r" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4Shv2s" role="2ip1qD" />
+    <node concept="2irfz6" id="5OAOh4Shv2t" role="2ip1qD">
+      <property role="2ir8iC" value="Considered Alternatives" />
+    </node>
+    <node concept="2iru$e" id="5OAOh4Shv8a" role="2ip1qD">
+      <property role="2iruIS" value="*" />
+      <property role="2iruEZ" value="java.util.logging" />
+    </node>
+    <node concept="2iru$e" id="5OAOh4ShvbV" role="2ip1qD">
+      <property role="2iruIS" value="*" />
+      <property role="2iruEZ" value="log4j" />
+    </node>
+    <node concept="2iru$e" id="5OAOh4ShvfK" role="2ip1qD">
+      <property role="2iruIS" value="*" />
+      <property role="2iruEZ" value="Apache commons logging with one of the above as backend" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4Shv2v" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4Shv2w" role="2ip1qD" />
+    <node concept="2irfz6" id="5OAOh4Shv2x" role="2ip1qD">
+      <property role="2ir8iC" value="Decision" />
+    </node>
+    <node concept="2iowq1" id="5OAOh4Shws6" role="2ip1qD">
+      <property role="2iowpZ" value="log4j will be used. The use of java.util.logging is prohibited." />
+    </node>
+    <node concept="2iph4c" id="5OAOh4Shv2z" role="2ip1qD" />
+    <node concept="2irfz6" id="5OAOh4Shwxx" role="2ip1qD">
+      <property role="2ir8iC" value="Test" />
+    </node>
+    <node concept="2ioXgU" id="5OAOh4ShwBm" role="2ip1qD">
+      <property role="2ioXnO" value="forbiddend-packages:JavaUtilLoggingMustNotBeUsed" />
+    </node>
+    <node concept="2irfz6" id="5OAOh4ShwBn" role="2ip1qD">
+      <property role="2ir8iC" value="log4j will be used. The use of java.util.logging is prohibited." />
+    </node>
+    <node concept="2io3ne" id="5OAOh4ShwBo" role="2ip1qD">
+      <node concept="2io3ms" id="5OAOh4ShwBp" role="2io3rR">
+        <property role="2io3kF" value="source" />
+      </node>
+      <node concept="2io3ms" id="5OAOh4ShwBq" role="2io3rR">
+        <property role="2io3kF" value="cypher" />
+      </node>
+      <node concept="2io3ms" id="5OAOh4ShwBr" role="2io3rR">
+        <property role="2io3kF" value="role=constraint" />
+      </node>
+      <node concept="2io3ms" id="5OAOh4ShwBt" role="2io3rR">
+        <property role="2io3kF" value="severity=blocker" />
+      </node>
+    </node>
+    <node concept="2iowq1" id="5OAOh4ShwHz" role="2ip1qD">
+      <property role="2iowpZ" value="FIXME: fix the copied query" />
+    </node>
+    <node concept="2igUWD" id="5OAOh4ShwBu" role="2ip1qD">
+      <node concept="2iowq1" id="5OAOh4ShwBv" role="1_6C3H">
+        <property role="2iowpZ" value="MATCH" />
+      </node>
+      <node concept="2iowq1" id="5OAOh4ShwBw" role="1_6C3H">
+        <property role="2iowpZ" value="    (t:Junit4:Test:Class)" />
+      </node>
+      <node concept="2iowq1" id="5OAOh4ShwBx" role="1_6C3H">
+        <property role="2iowpZ" value="WHERE NOT" />
+      </node>
+      <node concept="2iowq1" id="5OAOh4ShwBy" role="1_6C3H">
+        <property role="2iowpZ" value="    t.name =~ &quot;.*Test&quot;" />
+      </node>
+      <node concept="2iowq1" id="5OAOh4ShwBz" role="1_6C3H">
+        <property role="2iowpZ" value="RETURN" />
+      </node>
+      <node concept="2iowq1" id="5OAOh4ShwB$" role="1_6C3H">
+        <property role="2iowpZ" value="    t AS InvalidTestClass" />
+      </node>
+    </node>
+    <node concept="2iph4c" id="5OAOh4SgUkV" role="2ip1qD" />
+    <node concept="2iph4c" id="5OAOh4Shw$c" role="2ip1qD" />
+    <node concept="2ioOQi" id="5OAOh4SgUkW" role="2ip1qD">
+      <property role="2ioOO9" value="2" />
+      <property role="2ioOP9" value="Decision Topic 2" />
+    </node>
+    <node concept="2iowq1" id="5OAOh4SgUkX" role="2ip1qD">
+      <property role="2iowpZ" value="+" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4SgUkY" role="2ip1qD" />
+    <node concept="2ioOQi" id="5OAOh4SgUkZ" role="2ip1qD">
+      <property role="2ioOO9" value="2" />
+      <property role="2ioOP9" value="Decision Topic 3" />
+    </node>
+    <node concept="2iowq1" id="5OAOh4SgUl0" role="2ip1qD">
+      <property role="2iowpZ" value="+" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4SgUl1" role="2ip1qD" />
+    <node concept="2ioOQi" id="5OAOh4SgUl2" role="2ip1qD">
+      <property role="2ioOO9" value="2" />
+      <property role="2ioOP9" value="..." />
+    </node>
+    <node concept="2iowq1" id="5OAOh4SgUl3" role="2ip1qD">
+      <property role="2iowpZ" value="+" />
+    </node>
+    <node concept="2iph4c" id="5OAOh4SgUl4" role="2ip1qD" />
+    <node concept="2ioOQi" id="5OAOh4ShuT5" role="2ip1qD">
+      <property role="2ioOO9" value="1" />
+      <property role="2ioOP9" value="Simple Agreements" />
+    </node>
+    <node concept="2ioOQi" id="5OAOh4ShvhG" role="2ip1qD">
+      <property role="2ioOO9" value="2" />
+      <property role="2ioOP9" value="All Unit Tests must end with suffix 'Test'" />
+    </node>
+    <node concept="2ioXgU" id="5OAOh4Shvol" role="2ip1qD">
+      <property role="2ioXnO" value="naming-rules:TestsMustEndWithTest" />
+    </node>
+    <node concept="2irfz6" id="5OAOh4ShvxM" role="2ip1qD">
+      <property role="2ir8iC" value="All Unit Tests must end with suffix 'Test'" />
+    </node>
+    <node concept="2io3ne" id="5OAOh4ShvC_" role="2ip1qD">
+      <node concept="2io3ms" id="5OAOh4ShvEB" role="2io3rR">
+        <property role="2io3kF" value="source" />
+      </node>
+      <node concept="2io3ms" id="5OAOh4ShvEE" role="2io3rR">
+        <property role="2io3kF" value="cypher" />
+      </node>
+      <node concept="2io3ms" id="5OAOh4ShvHz" role="2io3rR">
+        <property role="2io3kF" value="role=constraint" />
+      </node>
+      <node concept="2io3ms" id="5OAOh4ShvXy" role="2io3rR">
+        <property role="2io3kF" value="depends=junit4:TestClass" />
+      </node>
+      <node concept="2io3ms" id="5OAOh4ShvKv" role="2io3rR">
+        <property role="2io3kF" value="severity=blocker" />
+      </node>
+    </node>
+    <node concept="2igUWD" id="5OAOh4ShvSv" role="2ip1qD">
+      <node concept="2iowq1" id="5OAOh4Shw3w" role="1_6C3H">
+        <property role="2iowpZ" value="MATCH" />
+      </node>
+      <node concept="2iowq1" id="5OAOh4Shw3D" role="1_6C3H">
+        <property role="2iowpZ" value="    (t:Junit4:Test:Class)" />
+      </node>
+      <node concept="2iowq1" id="5OAOh4Shw6K" role="1_6C3H">
+        <property role="2iowpZ" value="WHERE NOT" />
+      </node>
+      <node concept="2iowq1" id="5OAOh4Shw9W" role="1_6C3H">
+        <property role="2iowpZ" value="    t.name =~ &quot;.*Test&quot;" />
+      </node>
+      <node concept="2iowq1" id="5OAOh4Shwdd" role="1_6C3H">
+        <property role="2iowpZ" value="RETURN" />
+      </node>
+      <node concept="2iowq1" id="5OAOh4Shwgz" role="1_6C3H">
+        <property role="2iowpZ" value="    t AS InvalidTestClass" />
+      </node>
+    </node>
+    <node concept="2iph4c" id="5OAOh4ShwpF" role="2ip1qD" />
   </node>
 </model>
 
