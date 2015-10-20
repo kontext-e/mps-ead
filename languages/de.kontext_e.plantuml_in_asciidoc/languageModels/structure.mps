@@ -10,6 +10,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="rwuw" ref="r:05f7e3ee-cdd5-40e7-a90f-7ea663cca6b7(de.kontext_e.asciidoc.structure)" implicit="true" />
     <import index="9a4o" ref="r:663f2de6-2d75-4071-8fae-ac1b43f22204(de.kontext_e.plantuml.structure)" implicit="true" />
+    <import index="r8ia" ref="r:295ccc48-b5a5-414c-af7e-12634d032db5(de.kontext_e.neo4j.cypher.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -46,6 +47,19 @@
       <ref role="20lvS9" to="9a4o:2KALeuYrSyd" resolve="IDiagram" />
     </node>
     <node concept="PrWs8" id="2KALeuYtayu" role="PzmwI">
+      <ref role="PrY4T" to="rwuw:2KALeuYgH2N" resolve="ILine" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3sH0qgkiflL">
+    <property role="TrG5h" value="CypherQueryReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3sH0qgkifps" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="cypher" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="r8ia:2tz361D8GIh" resolve="Query" />
+    </node>
+    <node concept="PrWs8" id="3sH0qgkiflS" role="PzmwI">
       <ref role="PrY4T" to="rwuw:2KALeuYgH2N" resolve="ILine" />
     </node>
   </node>

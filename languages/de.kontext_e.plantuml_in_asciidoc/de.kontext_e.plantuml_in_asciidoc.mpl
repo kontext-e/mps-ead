@@ -91,6 +91,7 @@
   <extendedLanguages>
     <extendedLanguage>6e501150-5762-4277-b4a7-b0d3e9e5fcf3(de.kontext_e.asciidoc)</extendedLanguage>
     <extendedLanguage>7ebbcfc1-4f12-49c8-8abb-0188a2b7bf3f(de.kontext_e.plantuml)</extendedLanguage>
+    <extendedLanguage>7640afae-fde2-474b-9779-7dff5eb294dc(de.kontext_e.neo4j.cypher)</extendedLanguage>
   </extendedLanguages>
 </language>
 

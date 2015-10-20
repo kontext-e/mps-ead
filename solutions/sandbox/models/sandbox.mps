@@ -5,12 +5,16 @@
     <use id="542b09d5-9fea-43d0-b4e4-812d7527e00f" name="de.kontext_e.plantuml_in_asciidoc" version="-1" />
     <use id="6e501150-5762-4277-b4a7-b0d3e9e5fcf3" name="de.kontext_e.asciidoc" version="-1" />
     <use id="7ebbcfc1-4f12-49c8-8abb-0188a2b7bf3f" name="de.kontext_e.plantuml" version="-1" />
+    <use id="7640afae-fde2-474b-9779-7dff5eb294dc" name="de.kontext_e.neo4j.cypher" version="0" />
   </languages>
   <imports />
   <registry>
     <language id="542b09d5-9fea-43d0-b4e4-812d7527e00f" name="de.kontext_e.plantuml_in_asciidoc">
       <concept id="3181446686395639948" name="de.kontext_e.plantuml_in_asciidoc.structure.DiagramContentReference" flags="ng" index="2ikALF">
         <reference id="3181446686395658524" name="diagram" index="2ikznV" />
+      </concept>
+      <concept id="3975835850264606065" name="de.kontext_e.plantuml_in_asciidoc.structure.CypherQueryReference" flags="ng" index="zpvjl">
+        <reference id="3975835850264606300" name="cypher" index="zpvvS" />
       </concept>
     </language>
     <language id="7ebbcfc1-4f12-49c8-8abb-0188a2b7bf3f" name="de.kontext_e.plantuml">
@@ -30,6 +34,30 @@
         <child id="3181446686395173232" name="links" index="2iiOQn" />
         <child id="3181446686394907769" name="items" index="2ijVyu" />
       </concept>
+    </language>
+    <language id="7640afae-fde2-474b-9779-7dff5eb294dc" name="de.kontext_e.neo4j.cypher">
+      <concept id="8551591702207274624" name="de.kontext_e.neo4j.cypher.structure.LabelList" flags="ng" index="W$Ono">
+        <child id="8551591702207283909" name="labels" index="W$LAt" />
+      </concept>
+      <concept id="2838125798393815650" name="de.kontext_e.neo4j.cypher.structure.PathPattern" flags="ng" index="1egqS2">
+        <child id="2838125798394074283" name="pattern" index="1ehpzb" />
+      </concept>
+      <concept id="2838125798393815606" name="de.kontext_e.neo4j.cypher.structure.Match" flags="ng" index="1egqTm">
+        <child id="2838125798393815687" name="pathPattern" index="1egqVB" />
+        <child id="2838125798393826089" name="returnExpression" index="1egst9" />
+      </concept>
+      <concept id="2838125798393815573" name="de.kontext_e.neo4j.cypher.structure.Identifier" flags="ng" index="1egqTP" />
+      <concept id="2838125798393815715" name="de.kontext_e.neo4j.cypher.structure.Node" flags="ng" index="1egqV3">
+        <child id="8551591702207303766" name="labelList" index="W$WGe" />
+        <child id="2838125798393815746" name="identifier" index="1egqUy" />
+      </concept>
+      <concept id="2838125798393826154" name="de.kontext_e.neo4j.cypher.structure.IdentifierReference" flags="ng" index="1egssa">
+        <reference id="2838125798393826157" name="identifier" index="1egssd" />
+      </concept>
+      <concept id="2838125798393826193" name="de.kontext_e.neo4j.cypher.structure.Query" flags="ng" index="1egsvL">
+        <child id="2838125798393826194" name="clauses" index="1egsvM" />
+      </concept>
+      <concept id="2838125798394239546" name="de.kontext_e.neo4j.cypher.structure.Label" flags="ng" index="1eixpq" />
     </language>
     <language id="6e501150-5762-4277-b4a7-b0d3e9e5fcf3" name="de.kontext_e.asciidoc">
       <concept id="3181446686392143394" name="de.kontext_e.asciidoc.structure.AsciidocDocument" flags="ng" index="2i6oF5">
@@ -369,7 +397,12 @@
       <property role="2ir8iC" value="Decision" />
     </node>
     <node concept="2iph4c" id="5OAOh4SgUkQ" role="2ip1qD" />
-    <node concept="2iph4c" id="5OAOh4SgUkR" role="2ip1qD" />
+    <node concept="2irfz6" id="3sH0qgkiklN" role="2ip1qD">
+      <property role="2ir8iC" value="Test" />
+    </node>
+    <node concept="zpvjl" id="3sH0qgkitY2" role="2ip1qD">
+      <ref role="zpvvS" node="3sH0qgkieJS" resolve="All JUnit test classes must have a name with suffix &quot;Test&quot;." />
+    </node>
     <node concept="2iph4c" id="5OAOh4SgUkS" role="2ip1qD" />
     <node concept="2ioOQi" id="5OAOh4SgUkT" role="2ip1qD">
       <property role="2ioOO9" value="2" />
@@ -542,6 +575,26 @@
       </node>
     </node>
     <node concept="2iph4c" id="5OAOh4ShwpF" role="2ip1qD" />
+  </node>
+  <node concept="1egsvL" id="3sH0qgkieJS">
+    <property role="TrG5h" value="All JUnit test classes must have a name with suffix &quot;Test&quot;." />
+    <node concept="1egqTm" id="3sH0qgkieQq" role="1egsvM">
+      <node concept="1egqS2" id="3sH0qgkieQs" role="1egqVB">
+        <node concept="1egqV3" id="3sH0qgkieQK" role="1ehpzb">
+          <node concept="1egqTP" id="3sH0qgkieQM" role="1egqUy">
+            <property role="TrG5h" value="t" />
+          </node>
+          <node concept="W$Ono" id="3sH0qgkieXn" role="W$WGe">
+            <node concept="1eixpq" id="3sH0qgkieXo" role="W$LAt">
+              <property role="TrG5h" value="Junit4:Test:Class" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1egssa" id="3sH0qgkifb1" role="1egst9">
+        <ref role="1egssd" node="3sH0qgkieQM" resolve="t" />
+      </node>
+    </node>
   </node>
 </model>
 

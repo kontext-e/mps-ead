@@ -8,6 +8,7 @@
   <imports>
     <import index="f4by" ref="r:374ba0b4-62ce-4871-9935-854376a04528(de.kontext_e.plantuml_in_asciidoc.structure)" implicit="true" />
     <import index="9a4o" ref="r:663f2de6-2d75-4071-8fae-ac1b43f22204(de.kontext_e.plantuml.structure)" implicit="true" />
+    <import index="r8ia" ref="r:295ccc48-b5a5-414c-af7e-12634d032db5(de.kontext_e.neo4j.cypher.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -28,6 +29,7 @@
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -43,6 +45,17 @@
           <node concept="3F1sOY" id="2KALeuYtf5m" role="2wV5jI">
             <ref role="1NtTu8" to="9a4o:2KALeuYstIs" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3sH0qgkifq7">
+    <ref role="1XX52x" to="f4by:3sH0qgkiflL" resolve="CypherQueryReference" />
+    <node concept="1iCGBv" id="3sH0qgkifq9" role="2wV5jI">
+      <ref role="1NtTu8" to="f4by:3sH0qgkifps" />
+      <node concept="1sVBvm" id="3sH0qgkifqb" role="1sWHZn">
+        <node concept="3F2HdR" id="3sH0qgkifqx" role="2wV5jI">
+          <ref role="1NtTu8" to="r8ia:2tz361D8GIi" />
         </node>
       </node>
     </node>
